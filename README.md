@@ -63,7 +63,7 @@ In Maven:
    export DATASTORE_PORT=5000
  ```  
  
- Here the a complete Jenkins example:
+ Here is a complete Jenkins example:
  ```groovy  
  docker.image('google/cloud-sdk:latest').withRun('--entrypoint gcloud', 'beta emulators datastore start --no-legacy --project testing --host-port=0.0.0.0:8888 --consistency=1 --no-store-on-disk') { c ->
     docker.image('yourimage').inside("-e CI=true -e DATASTORE_HOST=datastore -e DATASTORE_PORT=8888 --link ${c.id}:datastore") {
