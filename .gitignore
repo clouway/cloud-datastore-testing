@@ -1,0 +1,10 @@
+atlassian-ide-plugin.xml
+.idea
+.shelf
+.gradle
+build
+out
+*.iws
+*.ipr
+*.iml
+build.properties
