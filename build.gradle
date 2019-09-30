@@ -25,7 +25,7 @@ allprojects {
   sourceCompatibility = 1.8
   targetCompatibility = 1.8
 
-  group = 'com.clouway.testing.datastore'
+  group = 'com.clouway.testing'
   version = '0.0.1'
 
   modifyPom {
