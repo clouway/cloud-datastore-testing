@@ -8,3 +8,4 @@ out
 *.ipr
 *.iml
 build.properties
+gradle.properties
