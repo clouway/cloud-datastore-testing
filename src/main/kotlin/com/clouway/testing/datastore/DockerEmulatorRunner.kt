@@ -21,8 +21,7 @@ internal class DockerEmulatorRunner : EmulatorRunner {
                     .withExposedPorts(emulatorPort)
                     .withCommand("/bin/sh", "-c",
             """
-              gcloud beta emulators datastore start --no-legacy \
-                --project $projectName \
+              gcloud beta emulators datastore start --project $projectName \
                 --host-port=0.0.0.0:$emulatorPort \
                 --consistency=1 \
                 --no-store-on-disk
