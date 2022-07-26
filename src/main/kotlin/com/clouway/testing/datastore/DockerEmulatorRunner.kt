@@ -30,7 +30,7 @@ internal class DockerEmulatorRunner : EmulatorRunner {
     datastoreContainer.start()
     
     val datastoreService: Datastore by lazy {
-      val containerHost = "${datastoreContainer.containerIpAddress}:${datastoreContainer.getMappedPort(emulatorPort)}"
+      val containerHost = "${datastoreContainer.host}:${datastoreContainer.getMappedPort(emulatorPort)}"
 
       DatastoreOptions.newBuilder()
               .setProjectId(projectName)
